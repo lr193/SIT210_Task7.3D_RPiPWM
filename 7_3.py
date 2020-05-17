@@ -25,12 +25,10 @@ try:
         GPIO.output(pin_trig,False)
 
         while GPIO.input(pin_echo)==0:
-            pass
-        start = time.time()
+            start = time.time()
 
         while GPIO.input(pin_echo)==1:
-            pass
-        stop = time.time()
+            stop = time.time()
 
         pDuration = stop - start
 
